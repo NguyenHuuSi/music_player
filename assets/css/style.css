@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #ec1f55;
+    --text-color: #333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* 10px */
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 2.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+.player {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.player .fa-circle-pause {
+    display: none;
+}
+
+.player.playing .fa-circle-pause{
+    display: inline-block;
+}
+
+.player.playing .fa-circle-play{
+    display: none;
+}
+
+.dashboard {
+    padding: 16px 16px 14px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    margin: 0 auto;
+    border-bottom: 1px solid #ebebeb;
+    width: 480px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    text-align: center;
+}
+
+header h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+header h2 {
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.cd {
+    display: flex;
+    margin: 20px auto 0;
+    width: 200px;
+}
+
+.cd-thumb {
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+    border-radius: 50%;
+}
+.control {
+    display: flex;
+    padding: 18px 0 8px 0;
+    justify-content: space-around;
+}
+
+.list .btn {
+    padding: 18px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.control .btn {
+    padding: 18px;
+    font-size: 3rem;
+    color: #666;
+}
+
+.control .btn.active {
+    color: var(--primary-color);
+}
+
+.progress {
+    width: 100%;
+   -webkit-appearance: none;
+   background-color: #d3d3d3;
+   opacity: 0.7;
+   outline: none;
+   height: 6px;
+   -webkit-transition: .3s;
+   transition: opacity .3s; 
+}
+
+.progress:hover {
+    opacity: 1;
+}
+
+
+.playlist {
+    margin-top: 480px;
+    padding: 12px;
+
+}
+
+.song {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 18px 25px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.song.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.thumb {
+    width: 47px;
+    padding-top: 47px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.body {
+    flex-grow: 1;
+    margin-left: 16px;
+}
+
+.body .title {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.body .author {
+    font-size: 1.3rem;
+}
+
+.option {
+    font-size: 2.3rem;
+}
+
